@@ -5,10 +5,17 @@
 <title>Photographer</title>
 <link rel="icon" type="image/x-icon" href="docs/assets/favicon.png">
 <style>
+body {
+    font-family: 'Ubuntu';font-size: 22px;
+}
+</style>
+<style>
 html {
   scroll-behavior: smooth;
 }
-
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
 body {
   height: 3000px;
   background: linear-gradient(0deg, #ffffff 0%, #ffffff 75%);
@@ -207,7 +214,9 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 .navbar a {
