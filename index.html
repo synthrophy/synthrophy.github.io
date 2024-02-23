@@ -4,18 +4,21 @@
 <!--9267FF 9267ff3e c3acff-->
 <title>Photographer</title>
 <link rel="icon" type="image/x-icon" href="docs/assets/favicon.png">
-<style>
-<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-body {
-    font-family: 'Ubuntu';
-}
 </style>
+<style>
+  ::-moz-selection { /* Code for Firefox */
+    color: rgb(255, 255, 255);
+    background: #9267FF;
+  }
+  
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: #9267FF;
+  }
+  </style>
 <style>
 html {
   scroll-behavior: smooth;
-}
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 body {
   height: 3000px;
@@ -215,9 +218,10 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
+  position:fixed;
   width: 100%; /* Full width */
+  z-index: 20; /* set higher z-index value */
 }
 
 .navbar a {
@@ -252,10 +256,10 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #9267ff3e;
+  background-color: #9267FF;
   width: 100%;
   left: 0;
-  z-index: 1;
+  z-index: 20;
 }
 
 .dropdown-content .header {
@@ -266,6 +270,7 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  position: fixed
 }
 
 /* Create three equal columns that floats next to each other */
