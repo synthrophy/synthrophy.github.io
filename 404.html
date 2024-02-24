@@ -6,6 +6,25 @@
 <link rel="icon" type="image/x-icon" href="docs/assets/favicon.png">
 </style>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #9267FF;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #c3acff;
+}
+</style>
+
 <style>
 
 body {
@@ -130,7 +149,7 @@ html {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.344);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0);
 }
 
 .container {
@@ -173,8 +192,8 @@ body, html {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("docs/assets/pattern.jpg");
-    height: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("docs/assets/guitar.jpg");
+    height: 70%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -444,7 +463,7 @@ body {
 <body style="background-color:white;">
 
 <div class="navbar" id="myNavbar">
-  <a href="#home" class="active">Home</a>
+  <a href="index.html">Home</a>
   <a href="#news">News</a>
   <a href="javascript:void(0);" class="icon" onclick="aFunction()">
     <i class="fa fa-bars"></i>
@@ -493,106 +512,17 @@ body {
 </script>
 
 <div class="hero-image">
-    <div class="hero-text">
-      <h1 style="font-size:50px">I am John Doe</h1>
-      <p>And I'm a Photographer</p>
-    </div>
-  </div>
+<div class="hero-text">
+    <h1 style="font-size:50px">2 X 2 = 5...</h1>
+    <p>Are you sure you followed the correct link?</p>
+</div>
+</div>
 
 <div style="padding:16px">
-  <h3>Responsive Mega Menu (Full-width dropdown in navbar)</h3>
-  <p>Hover over the "Dropdown" link to see the mega menu.</p>
-  <p>Resize the browser window to see the responsive effect.</p>
+  <h3>Error 404: We couldn't find the page you were looking for...</h3>
 </div>
 
-<div class="row">
-    <div class="column">
-      <div class="card">
-        <div class="container">
-          <h2>Jane Doe</h2>
-          <p class="title">CEO & Founder</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>example@example.com</p>
-          <p><button class="button">Contact</button></p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <div class="container">
-          <h2>Mike Ross</h2>
-          <p class="title">Art Director</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>example@example.com</p>
-          <p><button class="button">Contact</button></p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="column">
-      <div class="card">
-        <div class="container">
-          <h2>John Doe</h2>
-          <p class="title">Designer</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>example@example.com</p>
-          <p><button class="button">Contact</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row1">
-  <div class="column1">
-    <div class="card1">
-      <p>Partners</p>
-    </div>
-  </div>
-
-  <div class="column1">
-    <div class="card1">
-      <p>Projects</p>
-    </div>
-  </div>
-  
-  <div class="column1">
-    <div class="card1">
-      <p>Happy Clients</p>
-    </div>
-  </div>
-
-  <div class="column1">
-    <div class="card1">
-      <p>Views</p>
-    </div>
-  </div>
-</div>
-
-<br>
-
-<button class="collapsible">Open Collapsible</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active1");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+<button class="block" onclick="document.location='index.html'">Go to Home</button>
 
 <!--
 <button onclick="myFunction()">Show Snackbar</button>
@@ -606,9 +536,7 @@ function myFunction() {
 </script>
 //-->
 
-<footer style="padding:16px">
-  <p></p>
-</footer>
+
 
 </body>
 </html>
